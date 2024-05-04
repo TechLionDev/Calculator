@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Catppuccin Latte Base */
+    --background: 220 20% 90%;
+
+    /* Catppuccin Latte Text */
+    --foreground: 230 20% 30%;
+
+    /* Catppuccin Latte Crust */
+    --card: 220 20% 85%;
+    --card-foreground: 220 20% 10%;
+
+    /* Catppuccin Latte Mantle */
+    --popover: 220 22% 92%;
+    --popover-foreground: 220 22% 10%;
+
+    --primary: 220 30% 75%;
+    --primary-foreground: 220 30% 15%;
+
+    --secondary: 200 70% 60%;
+    --secondary-foreground: 200 70% 10%;
+
+    --muted: 220 15% 80%;
+    --muted-foreground: 220 15% 20%;
+
+    /* Catppuccin Latte Blue */
+    --accent: 220 90% 50%;
+    --accent-foreground: 220 90% 30%;
+
+    /* Catppuccin Latte Red */
+    --destructive: 340 80% 40%;
+    --destructive-foreground: 240 80% 10%;
+
+    /* Catppuccin Latte Green */
+    --success: 110 60% 40%;
+    --success-foreground: 110 60% 10%;
+
+    /* Catppuccin Latte Peach */
+    --warning: 20 90% 50%;
+    --warning-foreground: 20 90% 10%;
+
+    --border: 220 20% 90%;
+    --input: 220 20% 90%;
+    --ring: 220 20% 3.9%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Catppuccin Mocha Base */
+    --background: 240 21% 15%;
+
+    /* Catppuccin Mocha Text */
+    --foreground: 226 64% 88%;
+
+    /* Catppuccin Mocha Crust */
+    --card: 240 23% 10%;
+    --card-foreground: 240 23% 90%;
+
+    /* Catppuccin Mocha Mantle */
+    --popover: 240 21% 12%;
+    --popover-foreground: 240 21% 90%;
+
+    --primary: 220 20% 25%;
+    --primary-foreground: 220 20% 90%;
+
+    --secondary: 220 50% 40%;
+    --secondary-foreground: 220 50% 10%;
+
+    --muted: 240 20% 20%;
+    --muted-foreground: 240 20% 80%;
+
+    /* Catppuccin Mocha Blue */
+    --accent: 220 90% 70%;
+    --accent-foreground: 220 90% 40%;
+
+    /* Catppuccin Mocha Red */
+    --destructive: 340 80% 70%;
+    --destructive-foreground: 340 80% 40%;
+
+    /* Catppuccin Mocha Green */
+    --success: 110 50% 80%;
+    --success-foreground: 110 50% 30%;
+
+    /* Catppuccin Mocha Peach */
+    --warning: 20 90% 70%;
+    --warning-foreground: 20 90% 40%;
+
+    --border: 240 21% 10%;
+    --input: 240 21% 10%;
+    --ring: 240 21% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Form Changes */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* End Custom Form Changes */
