@@ -45,6 +45,7 @@ jobs:
             echo "runner=npx --no-install" >> $GITHUB_OUTPUT
             exit 0
           elif [ -f "${{ github.workspace }}/bun.lockb" ]; then
+            curl -fsSL https://bun.sh/install | bash
             echo "manager=bun" >> $GITHUB_OUTPUT
             echo "command=install" >> $GITHUB_OUTPUT
             echo "runner=bun" >> $GITHUB_OUTPUT
