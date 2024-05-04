@@ -65,6 +65,7 @@ const CalculatorShell = () => {
         }
         if (result.toString().includes(".")) {
           result = result.toFixed(10);
+          result = result.replace(/0+$/, "");
         }
         setInputValue(result.toString());
       } catch (error) {
