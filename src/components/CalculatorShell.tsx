@@ -147,7 +147,7 @@ const CalculatorShell = () => {
                 </Button>
                 <Button
                   className='flex-auto size-10 font-bold p-6 bg-accent text-accent-foreground hover:bg-accent-foreground hover:text-accent'
-                  onClick={() => handleButtonClick("**")}
+                  onClick={() => handleButtonClick("^")}
                 >
                   ^
                 </Button>
